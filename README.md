@@ -49,6 +49,12 @@ in INFIX notation : `((1 + (2 * 3)) - (4 / 2))`
 '((((2 + (((3 * 10.5) / ((9 / (3.3 + 1)) - 1)) / (2 + 3))) - 5) - 3) + 8)
 '(1 - (2 * 3)
 ```
-
+## How to run
 To run the test cases, open the `test.rkt` file. 
+The `print-ast` helper function by default prints in `LISP` notation. So, to print in `INFIX` notation, simply pass `infix` as an argument to the `print-ast` function, like below:
+```
+(print-ast (parse (open-input-string case-0)) "infix")
+```
+
+
 
